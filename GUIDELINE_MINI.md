@@ -7,7 +7,7 @@
 > người trong nhóm gán khác nhau, gần như luôn là vì file này chưa nói rõ — chứ
 > không phải vì ai kém.
 
-Nhóm / tên: `...`
+Nhóm / tên: `Lê Đức Tú`
 Clip: `clip_01`, `clip_02`
 
 ---
@@ -49,26 +49,24 @@ Bổ sung của nhóm (nếu có): `...`
 Ghi **frame cụ thể** và **ID cụ thể**, không ghi chung chung.
 
 ### Ca 1
-- Clip / frame / ID: `...`
-- Tình huống: `...`
-- Quyết định: `...`
-- Lý do: `...`
+- Clip / frame / ID: `clip_01 / frame 39 / track 3`
+- Tình huống: `BBox bị trôi giữa các keyframe, IoU với gold còn 0.51.`
+- Quyết định: `Thêm keyframe quanh frame 39 và chỉnh bbox ôm sát xe.`
+- Lý do: `Nội suy dài làm bbox lệch khỏi vật thể.`
 
 ### Ca 2
-- Clip / frame / ID: `...`
-- Tình huống: `...`
-- Quyết định: `...`
-- Lý do: `...`
+- Clip / frame / ID: `clip_01 / frame 82 / track 5`
+- Tình huống: `BBox của xe bị lệch, IoU với gold chỉ 0.50.`
+- Quyết định: `Thêm keyframe trước và sau frame 82; giữ nguyên ID 5.`
+- Lý do: `Xe vẫn là cùng một đối tượng, lỗi nằm ở vị trí bbox chứ không phải định danh.`
 
 ### Ca 3
-- Clip / frame / ID: `...`
-- Tình huống: `...`
-- Quyết định: `...`
-- Lý do: `...`
-
+- Clip / frame / ID: `clip_01 / frame 100–103 / track 5`
+- Tình huống: `BBox trôi liên tiếp trong nhiều frame khi xe thay đổi chuyển động.`
+- Quyết định: `Đặt keyframe dày hơn trong đoạn 100–103 và kiểm tra lại nội suy.`
+- Lý do: `Một keyframe đơn lẻ không đủ giữ bbox chính xác qua đoạn chuyển động nhanh.`
 ## 5. Sửa gì sau khi chấm với gold và sau khi kiểm chéo
 
 Luật nào trong file này hoá ra còn thiếu hoặc còn mơ hồ? Viết lại cho rõ:
 
-- `...`
-- `...`
+- Không có gì mơ hồ nữa cả.

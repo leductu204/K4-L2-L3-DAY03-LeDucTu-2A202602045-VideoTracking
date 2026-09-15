@@ -1,0 +1,153 @@
+{
+  "clip": "clip_01",
+  "frames": 190,
+  "iou_threshold": 0.5,
+  "pred_file": "/content/Day3-Lab/annotations/clip_01/gt.txt",
+  "gt_file": "/content/Day3-Lab/gold/clip_01/gt.txt",
+  "pred_label": "nhãn của bạn",
+  "gt_label": "gold clip_01",
+  "metrics": {
+    "HOTA": 0.7893,
+    "DetA": 0.7795,
+    "AssA": 0.8002,
+    "LocA": 0.8612,
+    "IDF1": 0.9604,
+    "IDTP": 545,
+    "IDFP": 17,
+    "IDFN": 28,
+    "MOTA": 0.9215,
+    "MOTP": 0.8457,
+    "IDSW": 0,
+    "FP": 17,
+    "FN": 28,
+    "GT_boxes": 573,
+    "PRED_boxes": 562
+  },
+  "gate": {
+    "checks": {
+      "IDF1": {
+        "value": 0.960352422907489,
+        "required": 0.8,
+        "passed": true
+      },
+      "MOTA": {
+        "value": 0.9214659685863874,
+        "required": 0.75,
+        "passed": true
+      },
+      "MOTP": {
+        "value": 0.8457114659096632,
+        "required": 0.7,
+        "passed": true
+      }
+    },
+    "passed": true
+  },
+  "diagnostics": {
+    "missed_gt_tracks": [],
+    "fragmented_gt_tracks": [],
+    "partially_covered_gt_tracks": [],
+    "ghost_pred_tracks": [],
+    "id_switches": [],
+    "loose_boxes": [
+      {
+        "frame": 82,
+        "gt_track": 5,
+        "pred_track": 5,
+        "iou": 0.502
+      },
+      {
+        "frame": 39,
+        "gt_track": 3,
+        "pred_track": 3,
+        "iou": 0.514
+      },
+      {
+        "frame": 103,
+        "gt_track": 5,
+        "pred_track": 5,
+        "iou": 0.532
+      },
+      {
+        "frame": 102,
+        "gt_track": 5,
+        "pred_track": 5,
+        "iou": 0.534
+      },
+      {
+        "frame": 101,
+        "gt_track": 5,
+        "pred_track": 5,
+        "iou": 0.536
+      },
+      {
+        "frame": 83,
+        "gt_track": 5,
+        "pred_track": 5,
+        "iou": 0.537
+      },
+      {
+        "frame": 11,
+        "gt_track": 2,
+        "pred_track": 1,
+        "iou": 0.541
+      },
+      {
+        "frame": 100,
+        "gt_track": 5,
+        "pred_track": 5,
+        "iou": 0.551
+      },
+      {
+        "frame": 99,
+        "gt_track": 5,
+        "pred_track": 5,
+        "iou": 0.563
+      },
+      {
+        "frame": 84,
+        "gt_track": 5,
+        "pred_track": 5,
+        "iou": 0.564
+      },
+      {
+        "frame": 187,
+        "gt_track": 1,
+        "pred_track": 2,
+        "iou": 0.568
+      },
+      {
+        "frame": 98,
+        "gt_track": 5,
+        "pred_track": 5,
+        "iou": 0.571
+      },
+      {
+        "frame": 88,
+        "gt_track": 5,
+        "pred_track": 5,
+        "iou": 0.572
+      },
+      {
+        "frame": 85,
+        "gt_track": 5,
+        "pred_track": 5,
+        "iou": 0.583
+      },
+      {
+        "frame": 95,
+        "gt_track": 5,
+        "pred_track": 5,
+        "iou": 0.588
+      },
+      {
+        "frame": 89,
+        "gt_track": 5,
+        "pred_track": 5,
+        "iou": 0.597
+      }
+    ],
+    "n_gt_tracks": 8,
+    "n_pred_tracks": 8
+  }
+}
